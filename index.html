@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Event Website</title>
+
+    <!-- FavIcon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./src/assets/favicon_io/site.webmanifest">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <!-- <link href="./dist/output.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./src/tailwind-css/build.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">
+
+    <!-- JS -->
+    <script src="./src/js/app.js"></script>
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="https://kit.fontawesome.com/815143cb5d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="max-w-[1200px] bg-primary-blueDark mx-auto">
+
+    <!-- ============================ NAVIGATION ============================ -->
+    <nav class="z-[9999] fixed w-full max-w-[1200px] h-auto md:p-2 p-4 px-10 flex flex-row justify-between md:justify-evenly items-center bg-primary-blueDark md:bg-primary-blueDark10 md:backdrop-blur-2xl md:rounded-full md:mt-5"
+        id="mobile-nav">
+        <div class="header-left w-[40px]">
+            <img src="./src/assets/DKO_Logo.png" alt="" class="w-full">
+        </div>
+
+        <button id="mobile-menu-btn block md:hidden"><i onclick="Menu(this)"
+                class='bx bx-menu text-primary-heroWhite text-3xl text-left md:hidden md:text-[0px]'></i></button>
+
+        <ul id="navbar-items" class="hidden flex-col items-center justify-center gap-6 p-6 absolute bg-primary-blue z-[10] left-0 top-[83px] w-full
+                        md:flex md:flex-row md:relative md:top-auto md:left-auto md:bg-transparent md:w-auto">
+            <li>
+                <a href="#home"
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">About
+                    Event</a>
+            </li>
+            <li>
+                <a href="#what-we-do"
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">Terms</a>
+            </li>
+            <li>
+                <a href="#guests"
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">Dress
+                    Code</a>
+            </li>
+            <li>
+                <a href="#partners"
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">Partners</a>
+            </li>
+            <li>
+                <a href="#blog"
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">Blog</a>
+            </li>
+            <button class="primary-button mobile block md:hidden">Contact Us</button>
+        </ul>
+        <button class="primary-button hidden md:block">Contact Us</button>
+    </nav>
+
+
+    <!-- ============================ HERO ============================ -->
+    <section id="home" class="section flex flex-col justify-center items-center gap-6">
+
+        <img src="./src/assets/hero/glow.png" alt=""
+            class="hidden xl:block z-[-10] absolute left-[11%] top-[10px] w-[600px]">
+
+        <h1 class="text-4xl sm:text-5xl font-bold text-center text-primary-heroWhite pt-[4rem] md:hidden">EVENT 2022
+        </h1>
+        <img src="./src/assets/hero/event_2022.png" alt="" class="max-w-[750px] w-full mt-[10rem] hidden md:block">
+        <!-- <div class="hero-event-image">
+            <img src="./src/assets/hero/hero_main-mobile.png" alt="" class="block md:hidden">
+            <img src="./src/assets/hero/hero_main.png" alt="" class="">
+        </div> -->
+        <img src="./src/assets/hero/hero_people_dark.png" alt=""
+            class="hidden md:block absolute w-screen top-[770px] z-[-100]">
+
+        <div class="hero-text-image max-w-[460px] mt-[420px] md:mt-[130px]">
+            <img src="./src/assets/hero/all_are_eco.png" alt="">
+        </div>
+
+
+        <button class="primary-button mt-4">Buy Ticket</button>
+
+    </section>
+
+    <!-- ============================ WHAT WE DO ============================ -->
+
+    <section id="what-we-do" class="section services">
+        <h1 class="section-title block sm:hidden">WHAT WE DO</h1>
+
+        <!-- Desktop Container -->
+
+        <img src="./src/assets/what-we-do/curve_lines.png" alt=""
+            class="hidden md:block z-[-10] absolute right-[5%] top-[1010px] w-[500px]">
+        <img src="./src/assets/what-we-do/curve_lines.png" alt=""
+            class="hidden md:block z-[-10] absolute left-[5%] top-[2400px] w-[400px]">
+
+        <div class="grid-flow-col place-items-start hidden sm:grid">
+            <div
+                class="services-container grid grid-cols-1 sm:grid-cols-1 gap-4 sm:gap-8 place-items-between place-content-between p-4">
+
+                <div
+                    class="service-card flex flex-col gap-8 p-6 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[500px]">
+                    <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                        <img src="./src/assets/what-we-do/services_1.png" alt=""
+                            class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <h2 class="service-title text-2xl font-bold text-primary-sectionTitleColor text-center">SPARK EVENT
+                        LIGHTING
+                    </h2>
+                    <p class="text-sm text-primary-greyColor text-center">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit. Leo pellentesque risus diam nullam turpis. Nunc
+                        porttitor enim, sed fringilla convallis volutpat feugiat nam.</p>
+                    <button class="primary-button mb-6">Hire for LIGHTING</button>
+
+                </div>
+
+
+                <div
+                    class="service-card flex flex-col gap-8 p-6 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[500px]">
+                    <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                        <img src="./src/assets/what-we-do/services-2.png" alt=""
+                            class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <h2 class="service-title text-2xl font-bold text-primary-sectionTitleColor text-center">SPARK EVENT
+                        LIGHTING
+                    </h2>
+                    <p class="text-sm text-primary-greyColor text-center">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit. Leo pellentesque risus diam nullam turpis. Nunc
+                        porttitor enim, sed fringilla convallis volutpat feugiat nam.</p>
+                    <button class="primary-button mb-6">Hire for LIGHTING</button>
+
+                </div>
+
+
+            </div>
+
+            <div
+                class="services-container grid grid-cols-1 sm:grid-cols-1 gap-4 sm:gap-8 place-items-between place-content-between p-4">
+
+                <h1 class="section-title text4xl mb-14 ml-14 text-left lg:mb-20 lg:text-5xl">WHAT WE DO</h1>
+
+                <div
+                    class="service-card flex flex-col gap-8 p-6 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[500px]">
+                    <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                        <img src="./src/assets/what-we-do/services-3.png" alt=""
+                            class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <h2 class="service-title text-2xl font-bold text-primary-sectionTitleColor text-center">SPARK EVENT
+                        LIGHTING
+                    </h2>
+                    <p class="text-sm text-primary-greyColor text-center">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit. Leo pellentesque risus diam nullam turpis. Nunc
+                        porttitor enim, sed fringilla convallis volutpat feugiat nam.</p>
+                    <button class="primary-button mb-6">Hire for LIGHTING</button>
+
+                </div>
+
+                <div
+                    class="service-card flex flex-col gap-8 p-6 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[500px]">
+                    <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                        <img src="./src/assets/what-we-do/services-4.png" alt=""
+                            class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <h2 class="service-title text-2xl font-bold text-primary-sectionTitleColor text-center">SPARK EVENT
+                        LIGHTING
+                    </h2>
+                    <p class="text-sm text-primary-greyColor text-center">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit. Leo pellentesque risus diam nullam turpis. Nunc
+                        porttitor enim, sed fringilla convallis volutpat feugiat nam.</p>
+                    <button class="primary-button mb-6">Hire for LIGHTING</button>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- Mobile Container -->
+        <div
+            class="services-container-mobile sm:hidden grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 place-items-between place-content-between p-4">
+            <div
+                class="service-card flex flex-col gap-8 p-4 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[400px]">
+                <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                    <img src="./src/assets/what-we-do/services_1.png" alt=""
+                        class="max-w-full max-h-full h-full w-full">
+                </div>
+
+                <h2 class="service-title text-lg font-bold text-primary-sectionTitleColor text-center">SPARK EVENT
+                    LIGHTING
+                </h2>
+                <p class="text-sm text-primary-textColor text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Leo pellentesque risus diam nullam turpis. Nunc
+                    porttitor enim, sed fringilla convallis volutpat feugiat nam.</p>
+                <button class="primary-button mb-6">Hire for LIGHTING</button>
+
+            </div>
+
+
+            <div
+                class="service-card flex flex-col gap-8 p-4 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[400px]">
+                <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                    <img src="./src/assets/what-we-do/services-2.png" alt=""
+                        class="max-w-full max-h-full h-full w-full">
+                </div>
+
+                <h2 class="service-title text-lg font-bold text-primary-sectionTitleColor text-center">SPARK EVENT
+                    LIGHTING
+                </h2>
+                <p class="text-sm text-primary-textColor text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Leo pellentesque risus diam nullam turpis. Nunc
+                    porttitor enim, sed fringilla convallis volutpat feugiat nam.</p>
+                <button class="primary-button mb-6">Hire for LIGHTING</button>
+
+            </div>
+
+            <div
+                class="service-card flex flex-col gap-8 p-4 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[400px]">
+                <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                    <img src="./src/assets/what-we-do/services-3.png" alt=""
+                        class="max-w-full max-h-full h-full w-full">
+                </div>
+
+                <h2 class="service-title text-lg font-bold text-primary-sectionTitleColor text-center">SPARK EVENT
+                    LIGHTING
+                </h2>
+                <p class="text-sm text-primary-textColor text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Leo pellentesque risus diam nullam turpis. Nunc
+                    porttitor enim, sed fringilla convallis volutpat feugiat nam.</p>
+                <button class="primary-button mb-6">Hire for LIGHTING</button>
+
+            </div>
+
+            <div
+                class="service-card flex flex-col gap-8 p-4 justify-center items-center mx-auto bg-primary-blue rounded-3xl max-w-[400px]">
+                <div class="service-img-container w-auto h-[260px] lg:h-[300px] rounded-xl">
+                    <img src="./src/assets/what-we-do/services-4.png" alt=""
+                        class="max-w-full max-h-full h-full w-full">
+                </div>
+
+                <h2 class="service-title text-lg font-bold text-primary-sectionTitleColor text-center">SPARK EVENT
+                    LIGHTING
+                </h2>
+                <p class="text-sm text-primary-textColor text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Leo pellentesque risus diam nullam turpis. Nunc
+                    porttitor enim, sed fringilla convallis volutpat feugiat nam.</p>
+                <button class="primary-button mb-6">Hire for LIGHTING</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ============================ GUESTS ============================ -->
+
+    <section id="guests" class="splide section guests max-w-[1200px]" id="image-carousel">
+        <h1 class="section-title">Our Guests</h1>
+
+
+        <div class="splide__track">
+
+            <ul class="splide__list flex flex-row gap-4 items-center justify-between lg:gap-8">
+
+                <li
+                    class="splide__slide guests-card flex flex-col gap-8 justify-center items-center bg-primary-blue rounded-3xl max-w-[300px]">
+                    <img src="./src/assets/guests/guest-1.png" alt="" class="max-w-full max-h-full h-full w-full">
+
+                    <div class="guest-content p-2">
+                        <h2
+                            class="guests-title text-lg font-extrabold text-primary-sectionTitleColor text-center mb-2 tracking-wider">
+                            Mathew Smith</h2>
+                        <p class="text-sm text-primary-textColor text-center mb-8 font-Oswald uppercase">Compositon
+                            Artist
+                        </p>
+                    </div>
+                </li>
+
+                <li
+                    class="splide__slide guests-card flex flex-col gap-8 justify-center items-center bg-primary-blue rounded-3xl max-w-[300px]">
+                    <div class="service-img-container w-auto">
+                        <img src="./src/assets/guests/guest-2.png" alt="" class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <div class="guest-content p-2">
+                        <h2
+                            class="guests-title text-lg font-extrabold text-primary-sectionTitleColor text-center mb-2 tracking-wider">
+                            Javin Aleen</h2>
+                        <p class="text-sm text-primary-textColor text-center mb-8 font-Oswald uppercase">Singer
+                        </p>
+                    </div>
+                </li>
+
+                <li
+                    class="splide__slide guests-card flex flex-col gap-8 justify-center items-center bg-primary-blue rounded-3xl max-w-[300px]">
+                    <div class="service-img-container w-auto">
+                        <img src="./src/assets/guests/guest-3.png" alt="" class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <div class="guest-content p-2">
+                        <h2
+                            class="guests-title text-lg font-extrabold text-primary-sectionTitleColor text-center mb-2 tracking-wider">
+                            Alex John</h2>
+                        <p class="text-sm text-primary-textColor text-center mb-8 font-Oswald uppercase">Singer
+                        </p>
+                    </div>
+                </li>
+        </div>
+        </ul> <!-- Splide Arrows -->
+        <div class="splide__arrows disabled:opacity-100">
+            <button class="splide__arrow splide__arrow--prev disabled:opacity-100">
+                <img src="./src/assets/arrow-left.svg" alt="">
+            </button>
+            <button class="splide__arrow splide__arrow--next disabled:opacity-100">
+                <img src="./src/assets/arrow-right.svg" alt="">
+            </button>
+        </div>
+
+    </section>
+
+    <!-- ============================ PARTNERS ============================ -->
+
+    <section id="partners" class="section clients">
+        <div class="title flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 mb-[35px] px-6">
+            <h1 class="section-title mb-0">Our Partners</h1>
+            <button class="primary-button">Contact Us</button>
+        </div>
+
+        <div
+            class="clients-card-container grid grid-flow-row md:grid-flow-col lg:grid-flow-row gap-4 md:gap-8 place-content-center place-items-center">
+
+            <div class="3-grid grid grid-flow-row lg:grid-cols-3 gap-4 place-content-start place-items-end w-full">
+
+                <div
+                    class="clients-card flex flex-col gap-4 p-6 justify-center items-center mx-auto bg-primary-blue rounded-[3rem] max-w-[300px] w-[250px] h-[250px]">
+                    <div class="clients-img-container w-auto">
+                        <img src="./src/assets/partners/client-1.png" alt=""
+                            class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <a href="#"
+                        class="guest-content p-2 flex flex-row gap-3 items-center justify-center cursor-pointer">
+                        <h2
+                            class="clients-title text-base text-primary-sectionTitleColor hover:text-white text-center duration-150 ease-in">
+                            website.com</h2>
+                        <img src="./src/assets/open_icon.png" alt="" class="w-[12px] h-[12px]">
+                    </a>
+                </div>
+
+
+                <div
+                    class="clients-card flex flex-col gap-4 p-6 justify-center items-center mx-auto bg-primary-blue rounded-[3rem] max-w-[300px] w-[250px] h-[250px]">
+                    <div class="clients-img-container w-auto">
+                        <img src="./src/assets/partners/client-2.png" alt=""
+                            class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <a href="#"
+                        class="guest-content p-2 flex flex-row gap-3 items-center justify-center cursor-pointer">
+                        <h2
+                            class="clients-title text-base text-primary-sectionTitleColor hover:text-white text-center duration-150 ease-in">
+                            website.com</h2>
+                        <img src="./src/assets/open_icon.png" alt="" class="w-[12px] h-[12px]">
+                    </a>
+                </div>
+
+
+                <div
+                    class="max-w-[300px] w-[250px] h-[250px] md:h-[170px] md:w-[170px] ml-0 clients-card flex flex-col gap-4 p-6 justify-center items-center mx-auto bg-primary-blue rounded-[3rem]">
+                    <div class="clients-img-container w-auto">
+                        <img src="./src/assets/partners/client-3.png" alt=""
+                            class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <a href="#"
+                        class="guest-content p-2 flex flex-row gap-3 items-center justify-center cursor-pointer">
+                        <h2
+                            class="clients-title text-base text-primary-sectionTitleColor hover:text-white text-center duration-150 ease-in">
+                            website.com</h2>
+                        <img src="./src/assets/open_icon.png" alt="" class="w-[12px] h-[12px]">
+                    </a>
+                </div>
+            </div>
+
+            <div class="3-grid grid grid-flow-row lg:grid-cols-3 gap-4 place-content-start place-items-start">
+
+                <div
+                    class="max-w-[300px] w-[250px] h-[250px] md:w-[170px] md:h-[170px] mr-0 clients-card flex flex-col gap-4 p-6 justify-center items-center mx-auto bg-primary-blue rounded-[3rem]">
+                    <div class="clients-img-container w-auto">
+                        <img src="./src/assets/partners/client-4.png" alt=""
+                            class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <a href="#"
+                        class="guest-content p-2 flex flex-row gap-3 items-center justify-center cursor-pointer">
+                        <h2
+                            class="clients-title text-base text-primary-sectionTitleColor hover:text-white text-center duration-150 ease-in">
+                            website.com</h2>
+                        <img src="./src/assets/open_icon.png" alt="" class="w-[12px] h-[12px]">
+                    </a>
+                </div>
+
+
+                <div
+                    class="clients-card flex flex-col gap-4 p-6 justify-center items-center mx-auto bg-primary-blue rounded-[3rem] max-w-[300px] w-[250px] h-[250px]">
+                    <div class="clients-img-container w-auto">
+                        <img src="./src/assets/partners/client-5.png" alt=""
+                            class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <a href="#"
+                        class="guest-content p-2 flex flex-row gap-3 items-center justify-center cursor-pointer">
+                        <h2
+                            class="clients-title text-base text-primary-sectionTitleColor hover:text-white text-center duration-150 ease-in">
+                            website.com</h2>
+                        <img src="./src/assets/open_icon.png" alt="" class="w-[12px] h-[12px]">
+                    </a>
+                </div>
+
+
+                <div
+                    class="clients-card flex flex-col gap-4 p-6 justify-center items-center mx-auto bg-primary-blue rounded-[3rem] max-w-[300px] w-[250px] h-[250px]">
+                    <div class="clients-img-container w-auto">
+                        <img src="./src/assets/partners/client-6.png" alt=""
+                            class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <a href="#"
+                        class="guest-content p-2 flex flex-row gap-3 items-center justify-center cursor-pointer">
+                        <h2
+                            class="clients-title text-base text-primary-sectionTitleColor hover:text-white text-center duration-150 ease-in">
+                            website.com</h2>
+                        <img src="./src/assets/open_icon.png" alt="" class="w-[12px] h-[12px]">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ============================ BLOG ============================ -->
+
+    <section id="blog" class="section blog bg-primary-blue">
+        <h1 class="section-title">Blog</h1>
+        <div class="blog-content grid grid-rows-1 place-items-center md:grid-cols-2 md:place-items-start">
+            <div class="blog-card flex flex-col gap-4 p-6 justify-center items-center mx-auto rounded-3xl">
+                <div class="blog-img-container max-w-[500px]">
+                    <img src="./src/assets/blog/blog-1.png" alt="" class="max-w-full max-h-full h-full w-full">
+                </div>
+
+                <div class="flex flex-row justify-center items-center gap-3">
+                    <p class="bg-[#0E121B] px-3 py-1 text-white rounded-full text-[14px] mt-1">Sound Record</p>
+                    <p class="p-0 text-sm text-white text-center font-Oswald uppercase">John Doe <span
+                            class='text-xl'>•</span> 19 JAN 2022</p>
+                </div>
+
+                <h2 class="text-3xl text-white text-center mb-3 font-Oswald uppercase">Gesture for the people and the
+                    culture</h2>
+
+                <a href="#" class="blog-btn px-5 py-3 flex flex-row gap-3 items-center justify-center cursor-pointer text-white border-[1.5px] rounded-3xl
+                    hover:text-primary-blue hover:bg-primary-heroWhite duration-100">
+                    Read More <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+            <div class="blog-card flex flex-col gap-4 p-6 justify-center items-center mx-auto rounded-3xl">
+                <div class="blog-img-container max-w-[500px]">
+                    <img src="./src/assets/blog/blog-2.png" alt="" class="max-w-full max-h-full h-full w-full">
+                </div>
+
+                <div class="flex flex-row justify-center items-center gap-3">
+                    <p class="bg-[#0E121B] px-3 py-1 text-white rounded-full text-[14px] mt-1">Stage Show</p>
+                    <p class="p-0 text-sm text-white text-center font-Oswald uppercase">John Doe <span
+                            class='text-xl'>•</span> 19 JAN 2022</p>
+                </div>
+
+                <h2 class="text-3xl text-white text-center mb-3 font-Oswald uppercase">Mostly metaverse is only as good
+                    as
+                    its tools and it is totally true.</h2>
+
+                <a href="#" class="blog-btn px-5 py-3 flex flex-row gap-3 items-center justify-center cursor-pointer text-white border-[1.5px] rounded-3xl
+                    hover:text-primary-blue hover:bg-primary-heroWhite duration-100">
+                    Read More <i class="fa-solid fa-arrow-up-right-from-square mb-[0.1rem]"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ FOOTER ============================ -->
+    <footer id="footer"
+        class="section lg:w-full max-w-[1200px] grid grid-cols-1 place-items-center place-content-center gap-4 lg:place-content-between bg-primary-blue">
+        <div
+            class="links-and-newsletter w-full flex flex-col justify-center lg:flex-row lg:justify-between lg:gap-24 lg:items-end lg:py-7 lg:border-b-[1.5px] border-primary-blueDark">
+            <div
+                class="links flex flex-col items-center justify-center gap-7 md:flex-row lg:flex-col lg:gap-4 lg:justify-center lg:items-start">
+                <img src="./src/assets/DKO_Logo.png" alt="" class="w-[45px]">
+                <ul class="flex flex-col items-center justify-center gap-7 md:flex-row">
+                    <li>
+                        <a href=""
+                            class="text-sm text-primary-textColor hover:text-white duration-150 ease-in-out">Products</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="text-sm text-primary-textColor hover:text-white duration-150 ease-in-out">Features</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="text-sm text-primary-textColor hover:text-white duration-150 ease-in-out">Pricing</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="text-sm text-primary-textColor hover:text-white duration-150 ease-in-out">Resources</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="text-sm text-primary-textColor hover:text-white duration-150 ease-in-out">Careers</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class=" flex flex-col justify-end">
+                <h2 class="text-2xl text-white pt-12 pb-4 text-center font-Oswald uppercase lg:text-left">Newsletter
+                </h2>
+                <div
+                    class="pb-8 pt-3 flex flex-col justify-center items-center gap-4 md:flex-row lg:justify-between lg:p-0">
+                    <input class="py-3 px-4 bg-white text-sm rounded-full w-auto" type="email" name="email"
+                        id="news-letter-input" placeholder="johndoe@example.com">
+                    <button class="primary-button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="copyright-links lg:w-full flex flex-col justify-center items-center gap-6 lg:flex-row lg:justify-between lg:items-start lg:gap-24">
+            <ul class="flex flex-row items-center justify-between gap-10">
+                <li>
+                    <a href="" class="text-sm text-primary-textColor hover:text-white">Terms</a>
+                </li>
+                <li>
+                    <a href=""
+                        class="text-sm text-primary-textColor hover:text-white duration-150 ease-in-out">Privacy</a>
+                </li>
+                <li>
+                    <a href=""
+                        class="text-sm text-primary-textColor hover:text-white duration-150 ease-in-out">Cookies</a>
+                </li>
+            </ul>
+            <div class="copyright-text flex flex-col justify-center items-center gap-1 ">
+                <h3 class="text-[12px] text-primary-textColor  text-center">© Developed by <a
+                        class="text-white hover:border-b-[1.5px] duration-75 ease-out"
+                        href="https://saimcode.vercel.app/">Saimcode</a></h3>
+                <h3 class="text-[12px] text-primary-textColor  text-center">© Design Idea by <a
+                        class="text-white hover:border-b-[1.5px] duration-75 ease-out"
+                        href="https://ui4free.com/website-templates/event-figma-landing-page.htm">Ui4free</a></h3>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
