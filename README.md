@@ -31,7 +31,7 @@ It's a web-based program so you would need the following:
 
 * Any OS (depending on your device).
 * A browser to run the application.
-* Link to the website: [Music Event Landing Page](https://delicate-semolina-fd2d36.netlify.app/)
+* Link to the website: [Music Event Landing Page](https://strong-frangollo-129da8.netlify.app/)
 
 ## ❔ Help
 
