@@ -25,14 +25,6 @@ I got this cool music event landing page design from [ui4free](https://ui4free.c
     
 #### 3. Start your live server
     
-### 📍 Using the application
-
-It's a web-based program so you would need the following:
-
-* Any OS (depending on your device).
-* A browser to run the application.
-* Link to the website: [Music Event Landing Page](https://strong-frangollo-129da8.netlify.app/)
-
 ## ❔ Help
 
 Contact me on the links below:
